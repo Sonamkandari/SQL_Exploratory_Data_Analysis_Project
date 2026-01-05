@@ -18,5 +18,11 @@ select * from INFORMATION_SCHEMA.TABLES;
 select * from  INFORMATION_SCHEMA.COLUMNS
 WHERE TABLE_NAME='dim_customers'
 ```
+---
+## Dimensions Exploration
+- Identifying the unique values or categories in each dimension, recognizing how data might be grouped or segmented, which is useful for later data analysis. 
+<img width="708" height="462" alt="image" src="https://github.com/user-attachments/assets/a64e0243-c8b8-4ad0-9a2e-53edccc57867" />
 
-
+---
+- Explore  all countries our customers come from
+- 
