@@ -110,5 +110,31 @@ select count(distinct customer_key) as total_oder_placed from gold.fact_sales
 
 
 ```
+--- 
+- If we want to put all big numbers together from a bussiness data
+- Generate a Report that shows all ey matrices of the business
+```
+select 'Total sales' as mesure_name, sum(sales_amount) As measure_value from gold.fact_sales
+Union all
+select 'Total Quantity', sum(quantity) from gold.fact_sales
+Union all
+select 'Average Price',AVG(price) from gold.fact_sales
+Union all
+select 'Total Nr. Orders', COUNT(DISTINCT order_number) from gold.fact_sales
+Union all
+select'Rotal Nr. Products', COUNT(product_name) from gold.dim_products
+Union all
+select 'Total Nr. Customers',COUNT(customer_key) from gold.dim_customers
+```
+---
+<img width="374" height="220" alt="image" src="https://github.com/user-attachments/assets/b17e5a59-811e-4ded-8e2f-833a31fdb03b" />
 
+---
+- **Magnitude Analysis**
+-  Compare the measure values by categories
+- It will help us to understand the importance of diffrent categories
+---
+<img width="459" height="396" alt="image" src="https://github.com/user-attachments/assets/be50d17f-ff36-4566-a271-97b66ba6ecee" />
+
+---
 
