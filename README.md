@@ -137,4 +137,9 @@ select 'Total Nr. Customers',COUNT(customer_key) from gold.dim_customers
 <img width="459" height="396" alt="image" src="https://github.com/user-attachments/assets/be50d17f-ff36-4566-a271-97b66ba6ecee" />
 
 ---
+- **Ranking Analysis**
+<img width="666" height="398" alt="image" src="https://github.com/user-attachments/assets/b665e111-c440-4a05-a621-d7d502f3bba0" />
+
+---
+
 
